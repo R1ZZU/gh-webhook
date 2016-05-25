@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
+    "babel-eslint": "^6.0.4",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
     "husky": "^0.11.4",
@@ -21,6 +22,9 @@
     "dev": "npm run clean && npm run compile -- -w",
     "precommit": "npm test",
     "test": "./node_modules/.bin/standard"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   },
   "author": "",
   "license": "ISC"
